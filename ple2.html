@@ -35,6 +35,7 @@
     <script src="../reveal.js-plugins/audio-slideshow/plugin.js"></script>
     <script src="../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
     <script src="../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+    <script src="../reveal.js-plugins/embed-tweet/plugin.js"></script>
   
     <!-- Font awesome -->
     <link rel="stylesheet" href="../reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
@@ -88,7 +89,9 @@
             ---
             ## Slide 3
           </textarea>
-        </section>                       
+        </section>     
+        <section>       <div class="tweet" data-src="https://twitter.com/ernestob/status/1368186305599901700"></div>    
+        </section>               
         <section>       
           <p> <a href="https://twitter.com/ernestob">Autor: @ernestob  </a></p>
           <p class="size3"> Optimizada para navegación horizontal en dispositivos móviles</p>
@@ -145,6 +148,7 @@
        <script src="plugin/customcontrols/plugin.js"></script>
        <script src="plugin/menu/plugin.js"></script>
        <script src="../reveal.js/plugin/fullscreen/plugin.js"></script>
+       <script src="../reveal.js-plugins/embed-tweet/plugin.js"></script>
        
     <script> 
     	// Full list of configuration options available here:
@@ -203,7 +207,7 @@
         // - false:  All iframes with data-src will be loaded only when visible
         preloadIframes: true,
         hash: true,
-				plugins: [ RevealMarkdown,  RevealMenu, RevealHighlight, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder,RevealNotes, RevealZoom, RevealFullscreen],
+				plugins: [ RevealMarkdown,  RevealMenu, RevealHighlight, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder,RevealNotes, RevealZoom, RevealFullscreen,RevealEmbedTweet],
 			});
 
 		function changeTheme(input) {
